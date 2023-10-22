@@ -4,7 +4,7 @@ import {Video} from './Video'
 
 // SOLO ES UNA STRING CON LA RUTA, PARA DESPUES CONCATENAR
 // const API = 'http://127.0.0.1:4000'
-const API = 'mern-api-production-d847.up.railway.app'
+const API = 'https://mern-api-production-d847.up.railway.app'
 
 
 export const getVideos = async() => {
