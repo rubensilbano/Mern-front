@@ -7,7 +7,10 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import ShowBookList from './components/Videos/Prueba';
 import VideoList from './components/Videos/VideoList';
-import VideoForm from './components/Videos/VideoForm';
+
+// LLAMADO AL VIDEOFORM
+// import VideoForm from './components/Videos/VideoForm';
+
 // FALTA IMPLEMENTAR ESTOS COMPONENTES
 import Navbar from './components/Navbar/Navbar';
 
@@ -49,8 +52,11 @@ function App() {
               AHORA TODAS LAS RUTAS SON EXACTAS POR DEFECTO.
               PARA DECLARAR RUTAS AMBIGUAS SE AGREGA UN * AL FINAL: <Route path="users/*"> */}
           <Route path='/' element={<VideoList/>} />
-          <Route path='/new-video' element={<VideoForm/>} />
-          <Route path='/update/:id' element={<VideoForm/>} />
+
+          {/* LLAMADO AL VIDEOFORM */}
+          {/* <Route path='/new-video' element={<VideoForm/>} />
+          <Route path='/update/:id' element={<VideoForm/>} /> */}
+          
         </Routes>
         {/* SIRVE PARA CREAR MENSAJES DE RESPUESTA EN EL FRONTEND.
         POR AHORA SE AGREGA PERO NO SE VERA HASTA QUE RECIBA LA ORDEN DE MOSTRARSE EN VideoForm.tsx */}
