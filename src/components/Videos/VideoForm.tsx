@@ -96,7 +96,9 @@ const VideoForm = () => {
   // DEBIDO AL , []) ESTA FUNCION SOLO SE LLAMA UNA VEZ CON CADA SUBMIT.
   useEffect(() => {
     if (params.id) getVideo(params.id);
-  }, [])
+  })
+  // PUEDE SER LA CAUSA DEL FALLO
+  // }, [])
 
   return (
     <div className="row">
